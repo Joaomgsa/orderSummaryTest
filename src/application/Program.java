@@ -23,15 +23,15 @@ public class Program {
         System.out.println("Enter Client Data:");
 
         System.out.print("Name: ");
-        String clientName = sc.nextLine();
+        String name = sc.nextLine();
 
         System.out.print("Email: ");
-        String clientEmail = sc.next();
+        String email = sc.next();
 
         System.out.print("Birth date (DD/MM/YYYY): ");
-        Date clientBirthDate = sdf.parse(sc.next());
+        Date birthDate = sdf.parse(sc.next());
 
-        Client client = new Client(clientName,clientEmail,clientBirthDate);
+        Client client = new Client(name,email,birthDate);
 
 
         System.out.println("Enter Order data: ");
@@ -39,13 +39,13 @@ public class Program {
         OrderStatus status = OrderStatus.valueOf(sc.next());
 
 
-        Order order = new Order(new Date(),status, client);
+        Order order = new Order(new Date(), status, client);
 
 
         System.out.print("How many items to this order? ");
         int n = sc.nextInt();
         for (int i=1; i <= n; i++ ){
-            System.out.println("Enter #"+ i +" item data:");
+            System.out.println("Enter # "+ i +" item data:");
             System.out.print("Product Name: ");
             sc.nextLine();
             String productName = sc.nextLine();

@@ -48,11 +48,11 @@ public class OrderItem {
     @Override
     public String toString() {
         return product.getName()
-                +", $"
+                + ", $"
                 + String.format("%.2f", price)
-                +", Quantity:"
-                +quantity+
+                + ", Quantity: "
+                + quantity +
                 ", Subtotal: $"
-                + String.format("%2.f", subTotal());
+                + String.format("%.2f", subTotal());
     }
 }
