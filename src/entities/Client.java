@@ -5,15 +5,15 @@ import java.util.Date;
 public class Client {
     public String name;
     public String email;
-    public Date date;
+    public Date brithdate;
 
     public Client() {
     }
 
-    public Client(String name, String email, Date date) {
+    public Client(String name, String email, Date brithdate) {
         this.name = name;
         this.email = email;
-        this.date = date;
+        this.brithdate = brithdate;
     }
 
     public String getName() {
@@ -33,10 +33,10 @@ public class Client {
     }
 
     public Date getDate() {
-        return date;
+        return brithdate;
     }
 
     public void setDate(Date date) {
-        this.date = date;
+        this.brithdate = brithdate;
     }
 }
